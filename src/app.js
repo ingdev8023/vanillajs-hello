@@ -17,13 +17,13 @@ window.onload = function() {
     "during my lunch",
     "while I was praying"
   ];
-  let phrase = [who, action, what, when];
-  let answer = [];
-  let random = 0;
-  for (let i = 0; i < phrase.length; i++) {
-    random = Math.floor(Math.random() * phrase[i].length);
-    answer.push(phrase[i][random]);
+  let excusePhrase = [who, action, what, when];
+  let answerPhrase = [];
+  let randomNumber = 0;
+  for (let i = 0; i < excusePhrase.length; i++) {
+    randomNumber = Math.floor(Math.random() * excusePhrase[i].length);
+    answerPhrase.push(excusePhrase[i][randomNumber]);
   }
-  let text = document.getElementById("excuse");
-  return (text.innerHTML = answer.join(" "));
+  let htmlText = document.getElementById("excuse");
+  return (htmlText.innerHTML = answerPhrase.join(" "));
 };
